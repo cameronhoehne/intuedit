@@ -91,6 +91,10 @@ iframe {
     border-radius: 50px;
 }
 
+.vidsize {
+    max-width: 800px;
+}
+
 @media (max-width: 820px) {
     .hero-container {
         padding-top: 0;
@@ -147,5 +151,8 @@ iframe {
         width: 20px;
         height: 20px;
         margin-left: 0;
+    }
+    .vidsize {
+        max-width: 350px;
     }
 }
