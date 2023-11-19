@@ -1,0 +1,122 @@
+﻿.nav-item {
+    font-size: 1.2rem;
+    margin: 0 0 0 .8rem;
+}
+
+.nav-hover {
+    transition: .3s;
+    border-radius: 50px;
+}
+
+.nav-hover:hover {
+        background-color: white;
+}
+
+    .nav-hover:hover span {
+        color: #781880;
+    }
+
+.nav-hover-contact {
+    border-radius: 50px;
+    transition: .3s;
+}
+
+    .nav-hover-contact:hover {
+        background-color: white;
+        color: #781880;
+    }
+
+        .nav-hover-contact:hover span {
+            color: #781880;
+        }
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+
+.box {
+    display: block;
+}
+
+img {
+    width: 60px;
+    height: 50px;
+}
+
+nav {
+    background-color: #781880;
+}
+
+span {
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-button {
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 50px;
+
+}
+
+.hide {
+    display: flex;
+    flex-direction: row;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collapse-cont {
+    padding: 0;
+}
+
+.initial {
+    transform: translateY(-400px);
+    z-index: 1;
+    height: 0px;
+    transition-duration: .35s;
+    transition-timing-function: ease;
+}
+
+.open {
+    transform: translateY(0px);
+    
+}
+
+
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    .test {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .not-collapsed {
+        display: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+
+}

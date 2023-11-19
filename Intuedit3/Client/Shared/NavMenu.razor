@@ -1,0 +1,81 @@
+﻿
+<div class="navbar sticky-top navbar-dark d-flex justify-content-center" style="background-color: #781880">
+    <div class="d-flex align-items-center px-4">
+        <a class="navbar-brand" href="/"><img src="/Assets/logoalt.png" />Intuedit</a>
+            <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+    </div>
+    <nav class="not-collapsed hide end px-4 align-items-center">
+        <div class="nav-item nav-hover">
+            <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                <span >Home</span>
+            </NavLink>
+        </div>
+        <div class="nav-item nav-hover">
+            <NavLink class="nav-link" href="/portfolio" Match="NavLinkMatch.All">
+                <span >Portfolio</span>
+            </NavLink>
+        </div>
+        <div class="nav-item nav-hover">
+            <NavLink class="nav-link" href="/pricing">
+                <span >Pricing</span>
+            </NavLink>
+        </div>
+        <div class="nav-item nav-hover-contact">
+            <button class="contact-button">
+                <NavLink class="nav-link" href="/contact">
+                    <span >Contact</span>
+                </NavLink>
+            </button>
+        </div>
+    </nav>
+    
+</div>
+
+
+
+
+
+
+    <div class="@NavMenuCssClass initial" style="background-color: #781880" @onclick="ToggleNavMenu">
+        <nav>
+            <div class="d-flex flex-column align-items-center">
+                <div class="nav-item">
+                    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                        <span>Home</span>
+                    </NavLink>
+                </div><div class="nav-item">
+                    <NavLink class="nav-link" href="/portfolio" Match="NavLinkMatch.All">
+                        <span>Portfolio</span>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" href="/pricing">
+                        <span>Pricing</span>
+                    </NavLink>
+                </div>
+                <div class="nav-item">
+                    <NavLink class="nav-link" style="margin-bottom: 1rem;" href="/contact">
+                        <span>Contact</span>
+                    </NavLink>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+@code {
+    private bool collapseNavMenu = false;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "open" : "close";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+

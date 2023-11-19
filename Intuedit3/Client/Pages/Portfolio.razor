@@ -1,0 +1,163 @@
+﻿@page "/portfolio"
+
+<main class="main-container">
+    <div class="hero-text">
+        <h1>Elevate Your Brand</h1>
+        <p>Whether you need to highlight a new product, promote your brand, or tell your love story, IntuEdit has the experience and expertise to craft narratives that resonate with your audience.</p>
+
+
+
+        <div class="cont-container">
+            <div class="drop-cont1">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle1">
+                        <p class="button-p-left">How we achieved this result <span>&#x25BC;</span></p>
+                    </button>
+                    <div class="initial @animation1">
+                        <p class="dropdown-p-left">We worked with Medical Eye Center to provide informative videos that answer specific questions future patients may have about their processes. We edited together the footage, color graded, and added simple graphics to draw in their audience and ensure that patients understand their process.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/MEC vid.m4v" />
+                </video>
+            </div>
+            <div class="drop-cont2">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle2">
+                        <p class="button-p-right"><span>&#x25BC;</span> How we achieved this result</p>
+                    </button>
+                    <div class="initial @animation2">
+                        <p class="dropdown-p-right">We worked with David Masters Group to put together a testimonial for the incredible work he did with Medical Eye Center's brand. We put together the footage and b-roll, added graphics and animations, color graded, and helped steer the direction of the video to highlight the value of both David Masters group and Medical Eye Center.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/masters vid.m4v" />
+                </video>
+            </div>
+            @*<div class="drop-cont1">
+            <div class="drop-cont-sizing">
+                <button @onclick="Toggle3">
+                    <p class="button-p-left">How we achieved this result <span>&#x25BC;</span></p>
+                </button>
+                <div class="initial @animation3">
+                    <p class="dropdown-p-left">We edited together a series of selfie/webcam style congratulatory videos for Istio to highlight their great achievement. We provided simple graphic animations and lower thirds as well as audio balancing to create a video worthy of their incredible work.</p>
+                </div>
+            </div>
+
+            <video controls class="video-border">
+                <source src="/Assets/Videos/istio vid.mp4" />
+            </video>
+        </div>*@
+            <div class="drop-cont1">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle4">
+                        <p class="button-p-left">How we achieved this result <span>&#x25BC;</span></p>
+                    </button>
+                    <div class="initial @animation4">
+                        <p class="dropdown-p-left">We worked together with ZipLineGear to provide a number of instructional videos to showcase how to put together and use their many zipline kits and gear. We edited together footage, color graded, and provided voiceover narration in order to provide a cohesive and informative introduction to their products.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/ziplinegear vid.m4v" />
+                </video>
+            </div>
+            <div class="drop-cont2">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle5">
+                        <p class="button-p-right"><span>&#x25BC;</span> How we achieved this result</p>
+                    </button>
+                    <div class="initial @animation5">
+                        <p class="dropdown-p-right">We worked together with Feed My Starving Children/Rogue Valley Mobile Pack to create a memorable promo for their operation in the Rogue Valley. We edited together the footage and narration to help share the word and draw in volunteers to help this wonderful operation continue to succeed.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/FMSC vid.m4v" />
+                </video>
+            </div>
+            <div class="drop-cont1">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle6">
+                        <p class="button-p-left">How we achieved this result <span>&#x25BC;</span></p>
+                    </button>
+                    <div class="initial @animation6">
+                        <p class="dropdown-p-left">We worked with Voices of the Magi to highlight their new album ahead of its release. We edited and color graded the footage and worked with the group to bring wonderful visuals together with beautiful audio.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/music vid.m4v" />
+                </video>
+            </div>
+            <div class="drop-cont2">
+                <div class="drop-cont-sizing">
+                    <button @onclick="Toggle7">
+                        <p class="button-p-right"><span>&#x25BC;</span> How we achieved this result</p>
+                    </button>
+                    <div class="initial @animation7">
+                        <p class="dropdown-p-right">We worked together with Grip Studs to provide a number of instructional videos to highlight their products and the installation process. We edited together footage, color graded, and created simple lower thirds to provide their customers with the knowledge they need to use and love their excellent products.</p>
+                    </div>
+                </div>
+
+                <video controls class="video-border">
+                    <source src="/Assets/Videos/grip stud vid.m4v" />
+                </video>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+
+
+@code {
+
+    private bool collapse1 = false;
+    private bool collapse2 = false;
+    private bool collapse3 = false;
+    private bool collapse4 = false;
+    private bool collapse5 = false;
+    private bool collapse6 = false;
+    private bool collapse7 = false;
+    private string? animation1 => collapse1 ? "open" : "close";
+    private string? animation2 => collapse2 ? "open" : "close";
+    private string? animation3 => collapse3 ? "open" : "close";
+    private string? animation4 => collapse4 ? "open" : "close";
+    private string? animation5 => collapse5 ? "open" : "close";
+    private string? animation6 => collapse6 ? "open" : "close";
+    private string? animation7 => collapse7 ? "open" : "close";
+    private void Toggle1()
+    {
+        collapse1 = !collapse1;
+    }
+    private void Toggle2()
+    {
+        collapse2 = !collapse2;
+    }
+    private void Toggle3()
+    {
+        collapse3 = !collapse3;
+    }
+    private void Toggle4()
+    {
+        collapse4 = !collapse4;
+    }
+    private void Toggle5()
+    {
+        collapse5 = !collapse5;
+    }
+    private void Toggle6()
+    {
+        collapse6 = !collapse6;
+    }
+    private void Toggle7()
+    {
+        collapse7 = !collapse7;
+    }
+
+}
+
