@@ -113,6 +113,10 @@ video {
     border-radius: 50px;
 }
 
+iframe {
+    border-radius: 50px;
+}
+
 
 @media (max-width: 820px) {
     .main-container {
