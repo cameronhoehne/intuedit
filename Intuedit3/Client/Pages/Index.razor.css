@@ -87,6 +87,7 @@
 }
 
 video {
+    border-radius: 50px;
     width: 50%;
     height: 30%;
 }
