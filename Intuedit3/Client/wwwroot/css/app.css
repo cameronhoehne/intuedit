@@ -73,7 +73,7 @@ a, .btn-link {
     justify-content: center;
 }
 
-    .loading div {
+    .loading > div {
         width: 1rem;
         height: 1rem;
         margin: 2rem 0.3rem;
