@@ -92,6 +92,7 @@ iframe {
 }
 
 .placeholder {
+    z-index: -999;
     background: url(/Assets/gif.gif) center center no-repeat;
     border-radius: 50px;
     top: 0;
